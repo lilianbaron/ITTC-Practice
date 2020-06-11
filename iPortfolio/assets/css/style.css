@@ -12,7 +12,9 @@ body {
   font-family: "Acme", sans-serif;
   color: #333;
 }
-
+.gap100{
+  padding: 60px 0;
+}
 a {
   color: crimson;
 }
@@ -333,7 +335,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 5px;
-  color: #000;
+  color: crimson;
 }
 
 .about .content p:last-child {
@@ -590,6 +592,11 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+ .services{
+  background: rgb(255,218,185);
+} 
+
+
 .services .icon-box {
   margin-bottom: 20px;
 }
@@ -634,7 +641,8 @@ section {
 }
 
 .services .title a {
-  color: #343a40;
+  color: #fff;
+  font-size: 25px;
 }
 
 /* .services .title a:hover {
@@ -645,6 +653,13 @@ section {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
+}
+.services .col-md-6{
+  padding: 40px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  margin: -1px;
 }
 
 /*--------------------------------------------------------------
