@@ -52,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #2eafec;
   transition: background 0.2s ease-in-out;
 }
 
@@ -98,7 +97,6 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -166,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   text-decoration: none;
-  color: #fff;
+  color: crimson;
 }
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
@@ -457,8 +455,9 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
-  padding: 5px 15px;
+  background: #000;
+  color: #fff;
+  padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
