@@ -211,7 +211,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/lilian.jpg")  top center;
+  background: url("../img/lilian.jpg") top center;
+  /* background-position: center center; */
   background-size: cover;
 }
 
@@ -282,15 +283,16 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
-  background: #f5f8fd;
-}
+ /* .section-bg {
+  background:  rgb(255,218,185);
+}  */
 
 .section-title {
   padding-bottom: 30px;
 }
 
 .section-title h2 {
+  text-align: center;
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -301,25 +303,30 @@ section {
 
 .section-title h2::after {
   content: '';
-  position: absolute;
+  position:absolute;
   display: block;
-  width: 50px;
+  width: 70px;
   height: 3px;
   background: #000;
   bottom: 0;
-  left: 0;
+  left: 46%;
 }
 
 .section-title p {
   margin-bottom: 0;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about{
+  background:  rgb(255,218,185);
+}
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 30px;
+  padding-bottom: 25px;
   color: crimson;
 }
 
@@ -329,12 +336,14 @@ section {
 }
 
 .about .content ul li {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+ 
 }
+
 
 .about .content ul i {
   font-size: 20px;
-  padding-right: 5px;
+  padding-right: 8px;
   color: crimson;
 }
 
@@ -395,6 +404,9 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+.skills{
+  background:  rgb(255,218,185);
+}
 .skills .progress {
   height: 50px;
   display: block;
@@ -447,11 +459,11 @@ section {
 
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: crimson;
   margin-bottom: 10px;
 }
 
@@ -492,6 +504,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -758,8 +771,11 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background:  rgb(255,218,185);
+}
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 50px;
 }
 
 .contact .info {
