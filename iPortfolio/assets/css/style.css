@@ -212,19 +212,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   background: url("../img/lilian.jpg") top center;
-  /* background-position: center center; */
+  /* background-position: center center;  */
   background-size: cover;
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: #000;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  opacity: 0.6;
 }
 
 #hero .hero-container {
@@ -293,28 +294,37 @@ section {
 
 .section-title h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 38px;
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
   color: crimson;
+  text-transform: uppercase;
 }
 
 .section-title h2::after {
   content: '';
   position:absolute;
   display: block;
-  width: 70px;
+  width: 80px;
   height: 3px;
   background: #000;
   bottom: 0;
-  left: 46%;
+  left: 46.5%;
 }
 
 .section-title p {
   margin-bottom: 0;
   text-align: center;
+  font-family: 'Roboto Condensed',sans-serif;
+  font-weight: bold;
+} 
+.section-title h1{
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -326,7 +336,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   color: crimson;
 }
 
@@ -345,6 +355,19 @@ section {
   font-size: 20px;
   padding-right: 8px;
   color: crimson;
+}
+.about .btn{
+  display: inline-block;
+    padding: 6px 20px;
+    color: #000e;
+    background-color: crimson;
+    border: 1px solid transparent;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: -10px;
+    transition: .3 ease;
+    transition-property: background-color, color;
+    margin-left: 30%;
 }
 
 .about .content p:last-child {
@@ -948,6 +971,99 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/*Footer*/
+#footer-top p{
+  color: #fff;
+  line-height: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#footer-top{
+  background: #222;
+  padding: 50px 0;
+}
+#footer-top h3{
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+}
+#footer-top h2{
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: white;
+  
+}
+.segment-one h3:before{
+  content: '|';
+  color: crimson;
+  padding-right: 10px;
+}
+.segment-one ul li{
+  list-style: none;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+  line-height: 30px;
+  margin-left: -20px;
+}
+.segment-one ul i{
+    font-size: 20px;
+    padding-right: 8px;
+    color: crimson;
+}
+.segment-one ul li a{
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  
+}
+.segment-two h3:before{
+  content: '|';
+  color: crimson;
+  padding-right: 10px;
+}
+.segment-two a{
+  background: rgb(241, 138, 144);;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    border-radius: 50px;
+}
+.segment-two a:hover{
+  background: linear-gradient(to bottom, #dd2476, #ff512f);
+}
+.segment-two a i{
+  font-size: 20px;
+    color: #fff;
+    padding: 12px 14px;
+}
+.segment-three h3:before{
+  content: '|';
+  color: crimson;
+  padding-right: 10px;
+}
+.segment-three input{ 
+  border: none !important;
+}
+.segment-three input::placeholder{
+  color: white !important;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.segment-three .input-group .input-group-text{
+  background: linear-gradient(to bottom, #dd2476, #ff512f);
+  border: none;
+  font-size: 15px;
+}
+.text{
+    color: #fff;
+    text-align: center;
+    /* padding: -50px; */
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+/*End Footer*/
 
 /*--------------------------------------------------------------
 # Breadcrumbs
