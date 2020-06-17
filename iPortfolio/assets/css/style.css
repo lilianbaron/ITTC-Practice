@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #222;
+  background: #040b14;
   overflow-y: auto;
 }
 
@@ -979,7 +979,7 @@ section {
   font-family: 'Roboto Condensed', sans-serif;
 }
 #footer-top{
-  background: #222;
+  background: #040b14;
   padding: 50px 0;
 }
 #footer-top h3{
