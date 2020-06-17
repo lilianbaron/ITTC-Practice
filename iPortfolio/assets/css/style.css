@@ -1042,17 +1042,37 @@ section {
   color: crimson;
   padding-right: 10px;
 }
-.segment-three input{ 
-  border: none !important;
+#footer-top .footer-top .segment-three form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
 }
-.segment-three input::placeholder{
-  color: white !important;
-  font-family: 'Roboto Condensed', sans-serif;
+
+#footer-top .footer-top .segment-three form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
 }
-.segment-three .input-group .input-group-text{
+
+#footer-top .footer-top .segment-three form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: crimson;
+  color: #151515;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+#footer-top .footer-top .segment-three form input[type="submit"]:hover {
   background: linear-gradient(to bottom, #dd2476, #ff512f);
-  border: none;
-  font-size: 15px;
 }
 .text{
     color: #fff;
