@@ -442,11 +442,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .popup{
-  background: rgba(0,0,0,0.6);
+   background: rgba(0,0,0,0.6); 
   width: 100%;
-  height: 100%;
+  height: 80%;
   position: absolute;
-  top: 0;
+  top: 50px;
   display: none;
   justify-content: center;
   align-items: center;
@@ -455,8 +455,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .popup-content{
-  height: 280px;
-  width: 700px;
+  height: 300px;
+  width: 800px;
   background: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -484,6 +484,23 @@ input{
   border-radius: 50%;
   box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
   cursor: pointer;
+}
+.popup .button{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 35px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-top: 20px;
+  background: #006400;
+  color: #fff;
+}
+.popup-content .user{
+  color: #006400;
+  font-size: 30px;
 }
 
 
@@ -849,11 +866,11 @@ section {
 
 .portfolio #portfolio-flters {
   padding: 0;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 30px auto;
   list-style: none;
   text-align: center;
   border-radius: 50px;
-  padding: 2px 15px;
+  padding: 8px 15px;
   background: #006400;
 }
 .portfolio .section-tilte p{
@@ -873,9 +890,15 @@ section {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
+.portfolio #portfolio-flters li::before{
+  content: '|';
+  color: #ddf3e0;
+  padding-right: 10px;
+  height: 8px;
+}
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #49b5e7;
+  color: #d0f5cd;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1010,8 +1033,9 @@ section {
 }
 
 .cta h3 {
+  margin-top: -50px;
   color: #fff;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -1036,6 +1060,12 @@ section {
 
 .cta .cta-btn:hover {
   background: #006400;
+}
+
+.clock{
+  color: #fff;
+  font-size: 80px;
+  font-family: 'Acme', sans-serif;
 }
 
 /*--------------------------------------------------------------
