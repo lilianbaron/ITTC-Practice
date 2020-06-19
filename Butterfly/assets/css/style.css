@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #49b5e7;
+  color: #006400;;
 }
 
 a:hover {
@@ -365,6 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  margin-top: 50px;
   width: 100%;
   height: 80vh;
   background: #eff3ef;
@@ -860,6 +861,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio{
+  background: #eff3ef;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -1030,6 +1034,7 @@ section {
   background: linear-gradient(rgba(12, 13, 14, 0.8), rgba(12, 13, 14, 0.8)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
+  display: flex;
 }
 
 .cta h3 {
@@ -1053,16 +1058,55 @@ section {
   padding: 12px 35px;
   border-radius: 4px;
   transition: 0.5s;
-  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
   background: #006400;
   color: #fff;
+}
+#button{
+  top: 70px;
+  position: relative;
 }
 
 .cta .cta-btn:hover {
   background: #006400;
 }
 
+#calendar{
+  width: 150px;
+  height: 200px;
+  margin-left: 10%;
+  background-color: rgb(16, 65, 4);
+  color: #fff;
+  border-radius: 5%;
+  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+}
+
+#calendar>p{
+  font-family: 'Acme', sans-serif;
+  padding: 10px 0;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+
+#calendar-day{
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#calendar-month-year{
+  font-size: 14px;
+}
+
+#calendar-date{
+  font-size: 70px;
+  padding-top: 8px;
+  padding-bottom: 0;
+}
+
 .clock{
+  margin-top: -150px;
   color: #fff;
   font-size: 80px;
   font-family: 'Acme', sans-serif;
@@ -1454,9 +1498,12 @@ section {
 #footer {
   background: #fff;
   padding: 0 0 30px 0;
-  color: #444444;
+  color: #000;
   font-size: 14px;
   background: #ebf7fc;
+}
+#footer .footer-contact h3{
+  color: #006400;
 }
 
 #footer .footer-newsletter {
@@ -1472,7 +1519,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #0f394c;
+  color: #006400;
 }
 
 #footer .footer-newsletter form {
@@ -1532,14 +1579,14 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Lato", sans-serif;
-  color: #777777;
+  font-family: 'Acme', sans-serif;
+  color: #000;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #0f394c;
+  color: #006400;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1572,7 +1619,9 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1606,13 +1655,13 @@ section {
 
 #footer .copyright {
   float: left;
-  color: #0f394c;
+  color: #006400;
 }
 
 #footer .credits {
   float: right;
   font-size: 13px;
-  color: #0f394c;
+  color: #006400;
 }
 
 @media (max-width: 575px) {
