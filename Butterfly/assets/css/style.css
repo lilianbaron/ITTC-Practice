@@ -14,11 +14,11 @@ body {
 }
 
 a {
-  color: #006400;;
+  color: #006400;
 }
 
 a:hover {
-  color: #76c7ed;
+  color: #84ed76;
   text-decoration: none;
 }
 
@@ -1112,6 +1112,24 @@ section {
   font-family: 'Acme', sans-serif;
 }
 
+
+@media (max-width: 768px){
+  #calendar{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 105px;
+  }
+  .clock{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1024px){
+  #calendar{
+    margin-left: 250px;
+  }
+}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1653,15 +1671,23 @@ section {
   text-decoration: none;
 }
 
+
 #footer .copyright {
   float: left;
+  /* background: #000; */
+  color: #000;
+  font-weight: bold;
+}
+
+#footer .copyright span{
   color: #006400;
 }
 
 #footer .credits {
   float: right;
   font-size: 13px;
-  color: #006400;
+  color: #000;
+  font-weight: bold;
 }
 
 @media (max-width: 575px) {
