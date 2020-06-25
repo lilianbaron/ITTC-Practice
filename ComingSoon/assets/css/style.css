@@ -21,7 +21,7 @@ body::before {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(34, 34, 34, 0.8);
+  /* background: rgba(34, 34, 34, 0.8); */
 }
 
 @media (min-width: 1024px) {
@@ -43,6 +43,10 @@ p{
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.gap100{
+  margin: 80px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -227,15 +231,16 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #4f92af;
-  color: #fff;
-  background: #4f92af;
+   border: 2px solid #fff; 
+  color: #000;
+  font-weight: bold;
+  /* background: #4f92af; */
 }
 
 #header .php-email-form button[type="submit"]:hover {
-  background: transparent;
+  background: crimson;
   color: #fff;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
 }
 
 @media (min-width: 1024px) {
@@ -284,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  color: #fff;
+  color: crimson;
 }
 
 /*--------------------------------------------------------------
@@ -294,9 +299,9 @@ section {
   padding: 60px 0;
 }
 
-.section-bg {
+/* .section-bg {
   background-color: #fff5f5;
-}
+} */
 
 .section-title {
   text-align: center;
@@ -314,29 +319,290 @@ section {
   margin-bottom: 0;
 }
 
+
 /*--------------------------------------------------------------
-# Contact Us
+# Portfolio
 --------------------------------------------------------------*/
+ 
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 30px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 8px 15px;
+  background: lightsalmon;
+}
+/* .portfolio .section-tilte p{
+  font-size: 18px;
+  color:#000;
+} */
+
+.portfolio .section-title h2 {
+   font-size: 30px;
+   font-weight: bold;
+   color: #000;
+}
+.portfolio .section-title span{
+  text-transform: uppercase;
+  font-size: 33px;
+  color: crimson;
+  font-weight: bolder;
+}
+
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio #portfolio-flters li::before{
+  content: '|';
+  color: #ddf3e0;
+  padding-right: 10px;
+  height: 8px;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: crimson;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(14, 2, 2, 0.2);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: rgb(238, 135, 152);
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgb(238, 135, 152) ;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: crimson;
+  margin: 0 3px;
+  font-size: 20px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: crimson;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-container {
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot.active {
+  background-color: #49b5e7 !important;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  color: #0f394c;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 50px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  width: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio-details .portfolio-info {
+    position: static;
+    margin-top: 30px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
-.contact .info-wrap {
-  background: rgba(255, 255, 255, 0.06);
-  padding: 30px;
-}
+
 
 .contact .info {
   width: 100%;
+  background: #fff;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #fff;
+  color: crimson;
   float: left;
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #ebf7fc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,52 +615,28 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
+  color: crimson;
 }
 
 .contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
   font-size: 14px;
+  color: lightcoral;
 }
 
-.contact .info .email p {
-  padding-top: 5px;
-}
-
-.contact .info .social-links {
-  padding-left: 60px;
-}
-
-.contact .info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
-}
-
-.contact .info .social-links a:hover {
-  background: #ff0000;
-  color: #fff;
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #ff0000;
+  background: lightcoral;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  padding: 30px;
-  padding-top: 0;
-  background: rgba(255, 255, 255, 0.06);
+  background: #fff;
 }
 
 .contact .php-email-form .form-group {
@@ -412,10 +654,14 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
-  text-align: center;
+  background: #62e762;
+  text-align: left;
   padding: 15px;
   font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
 }
 
 .contact .php-email-form .sent-message {
@@ -451,6 +697,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  border-radius: 4px;
 }
 
 .contact .php-email-form input {
@@ -462,15 +709,16 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #ff0000;
+  background: #006400;
   border: 0;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
+  border-radius: 4px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #ff3333;
+  background: #006400;
 }
 
 @-webkit-keyframes animate-loading {
@@ -490,7 +738,6 @@ section {
     transform: rotate(360deg);
   }
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
