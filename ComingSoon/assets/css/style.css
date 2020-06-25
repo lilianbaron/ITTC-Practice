@@ -387,7 +387,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(14, 2, 2, 0.2);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .portfolio .portfolio-wrap::before {
@@ -449,12 +449,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: rgb(238, 135, 152);
+  color: red;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: rgb(238, 135, 152) ;
+  color: red;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -468,7 +468,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: crimson;
-  margin: 0 3px;
+  margin: 5px 3px;
   font-size: 20px;
   display: inline-block;
   transition: 0.3s;
@@ -589,6 +589,13 @@ section {
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
+.contact{
+  margin-top: -80px;
+}
+
+.contact .section-title h2{
+  color: #000;
+}
 
 
 .contact .info {
@@ -622,7 +629,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: lightcoral;
+  color: #000;
 }
 
 .contact .info .email, .contact .info .phone {
@@ -654,7 +661,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #62e762;
+  background: crimson;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -667,7 +674,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: crimson;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -709,7 +716,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #006400;
+  background: crimson;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -718,7 +725,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #006400;
+  background: coral;
 }
 
 @-webkit-keyframes animate-loading {
