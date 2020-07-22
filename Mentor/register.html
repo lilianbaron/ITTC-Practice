@@ -14,6 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
@@ -86,7 +87,7 @@
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Events</h2>
+        <h2>Register</h2>
         <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
       </div>
     </div><!-- End Breadcrumbs -->
@@ -95,51 +96,84 @@
     <section id="register" class="register">
       <div class="container" data-aos="fade-up">
         <div class="row">
-            <div class="col-md-6">
-                <div class="countdown d-flex justify-content-center" data-count="2020/12/30">
-                    <div>
-                      <h3>%D</h3>
-                      <h4>Days</h4>
+          <div class=" col-md-6 clock">
+          <iframe src="http://free.timeanddate.com/clock/i7dnukvs/n1982/szw110/szh110/cf100/hnce1ead6" frameborder="0" width="110" height="110"></iframe>
+      
+    
+               <div class="calendar"> 
+                  <div class="month">
+                    <i class="fa fa-angle-left prev"></i>
+                    <div class="date">
+                      <h1></h1>
+                      <p></p>
                     </div>
-                    <div>
-                      <h3>%H</h3>
-                      <h4>Hours</h4>
+                    <i class="fa fa-angle-right next"></i>
+                  </div>
+                  <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                  </div>
+                  <div class="days"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-5 mt-lg-0 Freg">
+                <div class="reg">Register</div>
+                <div class="container">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <h5>Your Name</h5>
+                    <div class="col-md-6 form-group">
+                       <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" /> 
+                      <div class="validate"></div>
                     </div>
-                    <div>
-                      <h3>%M</h3>
-                      <h4>Minutes</h4>
+                    <h5>Your Email</h5>
+                    <div class="col-md-6 form-group">
+                      <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validate"></div>
                     </div>
-                    <div>
-                      <h3>%S</h3>
-                      <h4>Seconds</h4>
+                    <h5>Password</h5>
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <div class="validate"></div>
+                    </div>
+                    <h5>Confirm Password</h5>
+                    <div class="col-md-6 form-group">
+                      <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validate"></div>
                     </div>
                   </div>
-            </div>
+                </form>
+                <a href="courses.html" class="reg-started-btn">Get Started</a>
+              </div>
+         
 
-            <div class="col-md-6 cal">
-                <div class="calendar">
-                    <div class="month">
-                      <i class="fas fa-angle-left prev"></i>
-                      <div class="date">
-                        <h1></h1>
-                        <p></p>
-                      </div>
-                      <i class="fas fa-angle-right next"></i>
-                    </div>
-                    <div class="weekdays">
-                      <div>Sun</div>
-                      <div>Mon</div>
-                      <div>Tue</div>
-                      <div>Wed</div>
-                      <div>Thu</div>
-                      <div>Fri</div>
-                      <div>Sat</div>
-                    </div>
-                    <div class="days"></div>
-                  </div>
+           <!-- <div class="col-md-6 form">
+            <div class="form-content">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAw0lEQVRIS+2U3Q2CQBCEPzqwEyxBO5BKtQMtQTuxBDOJJCfuHyYXX+ANssy3Ozt3A52fobM+GyB1+O8WnYAb8HRa3QEH4OKNEk0g8TNwB44GROJXYA9MHiQCSEDdjwakFX+8pzCnzHZgQeTG3HkorsIMoJolRN9kSypeBSwhei+JrwXMtug/b/FfYapa1HouEWvxZlIzgJUWCXnpWjVBFMUowh+QykHzFtpCfjpo6qTrVZHelJWCbMkVjbBmA6QWdrfoBQwINBmYmmoWAAAAAElFTkSuQmCC" alt="close" class="close"/>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA9ElEQVRIS82VYQ3CMBCFvykACaAAkIADcAAKkAAoIChAAkhAAg5AAiiAvGQN0LW9ZWVk9+eyrHnf9d3uVtByFC3rUxcwBtaAsuICbMucrLEOYAYcIypz4JQiWIA+cAWUQ3EHhoByMCxAqnonOAXOTQGb0vuUC+qFznXzBvL+BvQiBT6AQU4PpNvqV+QK1/cvnz/nQM+ah+w5sDS6C1CDV2UPnDV+tbJIk7yPNTo2aAtgl5hgH6RJXobWRggg8UND4yu7yQdYu8fiVnaTD6izGizI1+rwAWrayFIw3ktj4s74gGemeEX374AfXeAtY/1wsoGtA15asSgZHEjYigAAAABJRU5ErkJggg==" class="user"/>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="name" class="form-control" name="name" id="name" placeholder="Your Name" data-rule="email" data-msg="Please enter a valid name" />
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Your Password" data-rule="password" data-msg="Please enter a valid password" />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="pass2" class="form-control" name="pass2" id="pass2" placeholder="Repeat Password" data-rule="pass2" data-msg="Please enter a valid password" />
+                </div>
+    
+              </div>
+             
+              <a href="#" class="button">Register</a>
             </div>
-        </div>
+          </div>  -->
+         
 
+        </div>           
       </div>
     </section><!-- End Events Section -->
 
